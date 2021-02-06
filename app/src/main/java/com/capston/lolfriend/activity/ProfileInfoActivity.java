@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import com.capston.lolfriend.R;
 import com.capston.lolfriend.etc.CustomProgressDialog;
 
+//미완성
 public class ProfileInfoActivity extends AppCompatActivity {
 
     CustomProgressDialog mDialog;
