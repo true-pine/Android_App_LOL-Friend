@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">lolfriend</string>
+    <string name="domain">"@capston.com"</string>
+    <string name="api_key">"RGAPI-d1c61418-e40a-45af-8c7f-5db54b73f489"</string>
+    <string name="asset_url">"http://ddragon.leagueoflegends.com/cdn/11.3.1/img/profileicon/"</string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="default_notification_channel_name" translatable="true">Weather</string>
+</resources>

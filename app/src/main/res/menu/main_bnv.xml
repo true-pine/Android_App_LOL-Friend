@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:title=""
+        android:icon="@drawable/ico_chatroom_nor" />
+
+    <item
+        android:id="@+id/people"
+        android:title=""
+        android:icon="@drawable/ico_user_nor" />
+
+    <item
+        android:id="@+id/chat"
+        android:title=""
+        android:icon="@drawable/ico_chat_nor" />
+
+    <item
+        android:id="@+id/more"
+        android:title=""
+        android:icon="@drawable/ico_more_nor" />
+
+</menu>

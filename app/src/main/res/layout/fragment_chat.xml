@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#181F25"
+    tools:context="fragment.ChatFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatFragment_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/RecyclerViewEdgeEffect"/>
+
+    <TextView
+        android:id="@+id/chatFragment_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="채팅중인 방이 없습니다"
+        android:textColor="#1F262C"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

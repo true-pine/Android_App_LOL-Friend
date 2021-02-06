@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#181F25"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".activity.RequestActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/requestActivity_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="문의하기"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/requestActivity_toolbar">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/requestActivity_til_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/white">
+
+            <EditText
+                android:id="@+id/requestActivity_et_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="제목"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:theme="@style/EditTextTheme" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/requestActivity_til_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_above="@+id/requestActivity_btn_send"
+            android:layout_below="@+id/requestActivity_til_subject"
+            android:textColorHint="@android:color/white"
+            app:counterEnabled="true"
+            app:counterMaxLength="500">
+
+            <EditText
+                android:id="@+id/requestActivity_et_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="내용"
+                android:gravity="top"
+                android:theme="@style/EditTextTheme"
+                android:textColor="@android:color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/requestActivity_btn_send"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="보내기"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

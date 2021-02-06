@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#181F25"
+    tools:context=".activity.ProfileInfoActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="프로필"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileInfoActivity_iv_profile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:civ_border_color="@color/colorAccent"
+            app:civ_border_width="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/ic_person_black_24dp" />
+
+        <TextView
+            android:id="@+id/profileInfoActivity_tv_solotier"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:gravity="center"
+            android:text="개인랭크"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toStartOf="@+id/profileInfoActivity_tv_freetier"
+            app:layout_constraintStart_toEndOf="@+id/profileInfoActivity_iv_profile"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/profileInfoActivity_tv_freetier"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="자유랭크"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/profileInfoActivity_tv_solotier"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/profileInfoActivity_iv_solotier"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/profileInfoActivity_iv_freetier"
+            app:layout_constraintStart_toEndOf="@+id/profileInfoActivity_iv_profile"
+            app:layout_constraintTop_toBottomOf="@+id/profileInfoActivity_tv_solotier"
+            tools:src="@drawable/ic_person_black_24dp" />
+
+        <ImageView
+            android:id="@+id/profileInfoActivity_iv_freetier"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/profileInfoActivity_iv_solotier"
+            app:layout_constraintTop_toBottomOf="@+id/profileInfoActivity_tv_freetier"
+            tools:src="@drawable/ic_person_black_24dp" />
+
+        <TextView
+            android:id="@+id/profileInfoActivity_tv_nickname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="@+id/profileInfoActivity_iv_profile"
+            app:layout_constraintStart_toStartOf="@+id/profileInfoActivity_iv_profile"
+            app:layout_constraintTop_toBottomOf="@+id/profileInfoActivity_iv_profile"
+            tools:text="닉네임" />
+
+        <TextView
+            android:id="@+id/profileInfoActivity_tv_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="@+id/profileInfoActivity_iv_profile"
+            app:layout_constraintStart_toStartOf="@+id/profileInfoActivity_iv_profile"
+            app:layout_constraintTop_toBottomOf="@+id/profileInfoActivity_tv_nickname"
+            tools:text="아이디" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/profileInfoActivity_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"/>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#181F25"
+    tools:context="fragment.PeopleFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/peopleFragment_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="vertical"
+        android:theme="@style/RecyclerViewEdgeEffect"/>
+
+</LinearLayout>

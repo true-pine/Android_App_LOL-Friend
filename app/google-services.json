@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "814605232141",
+    "firebase_url": "https://howltalkandroid32-master-75801.firebaseio.com",
+    "project_id": "howltalkandroid32-master-75801",
+    "storage_bucket": "howltalkandroid32-master-75801.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:814605232141:android:23f2b1adf9cdc64515cd44",
+        "android_client_info": {
+          "package_name": "com.capston.lolfriend"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "814605232141-lvli7ju5na1ggql97pcig72afcahc6k0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.capston.lolfriend",
+            "certificate_hash": "34f96cac5cbfcfcab6cadd17402799c0ffe5bd11"
+          }
+        },
+        {
+          "client_id": "814605232141-k9e047ld4p0h0f4qrmnbqqtr2hefgk9g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.capston.lolfriend",
+            "certificate_hash": "570994e73e73bc375a418b4224de295f91fadb82"
+          }
+        },
+        {
+          "client_id": "814605232141-621johm688kgvsd3a5nu6opraqqk1k5o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDB9PiYMW2HZWm8MgEXitKTW20aMHdp-Uw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "814605232141-621johm688kgvsd3a5nu6opraqqk1k5o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

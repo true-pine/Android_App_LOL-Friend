@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="#1F262C"
+    android:padding="10dp"
+    android:layout_marginTop="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/peopleItem_iv"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/colorAccent"
+        tools:src="@drawable/ic_person_black_24dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/peopleItem_tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="닉네임"
+                android:textColor="@android:color/white"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/peopleItem_tv_lasttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="티어"
+                android:textSize="12sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/peopleItem_tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="자기소개 입니다"
+                android:textSize="12sp"
+                android:textColor="@android:color/darker_gray"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

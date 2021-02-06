@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/itemRoomInfo_iv_usericon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_person_black_24dp"
+            app:civ_border_color="@color/colorAccent"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:id="@+id/itemRoomInfo_tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/itemRoomInfo_iv_usericon"
+            android:gravity="center_vertical"
+            android:text="유저이름정보"
+            android:textColor="@android:color/white"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/itemRoomInfo_iv_solotier"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            tools:src="@drawable/ic_person_black_24dp"
+            app:civ_circle_background_color="@color/colorAccent"
+            android:layout_toLeftOf="@id/itemRoomInfo_iv_freetier"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/itemRoomInfo_iv_freetier"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            tools:src="@drawable/ic_person_black_24dp"
+            app:civ_circle_background_color="@color/colorAccent"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+</LinearLayout>
