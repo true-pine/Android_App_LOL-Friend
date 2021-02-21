@@ -1,5 +1,5 @@
 # 롤프랜드 - 함께할 게임친구 만들기
-![previewImage]()
+![previewImage](https://github.com/true-pine/Android_App_LOL-Friend/blob/master/docs/previewImage.webp)
 ### 1. 작업인원  
 총 3인 중 개발전담
 ### 2. 작업기간  
